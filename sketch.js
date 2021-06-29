@@ -65,22 +65,6 @@ function showCannonBalls(ball, index) {
   }
 }
 
-function showBoats() {
-  
-      var positions = [-130, -100, -120, -80];
-      var position = random(positions);
-      var boat = new Boat(width,height - 100, 200, 200, position);
-      boats.push(boat);
-    }
-
-    for (var i = 0; i < boats.length; i++) {
-      Matter.Body.setVelocity(boats[i].body, {
-        x: -0.9,
-        y: 0
-      });
-
-      boats[i].display();
-    }
  
 
     function showBoats() {
